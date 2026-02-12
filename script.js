@@ -29,6 +29,13 @@ function moveButton() {
     const stage = document.querySelector(".stage");
     const button = document.getElementById("noBtn");
 
+    // If not already moved out of card
+    if (!button.classList.contains("free")) {
+        button.classList.add("free");
+        stage.appendChild(button);  // Move button outside card
+        button.style.position = "absolute";
+    }
+
     const stageRect = stage.getBoundingClientRect();
     const buttonWidth = button.offsetWidth;
     const buttonHeight = button.offsetHeight;
@@ -44,6 +51,9 @@ function moveButton() {
     button.style.left = x + "px";
     button.style.top = y + "px";
 }
+
+
+
 
 const noBtn = document.getElementById("noBtn");
 
