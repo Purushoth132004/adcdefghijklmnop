@@ -6,7 +6,7 @@ function checkCode() {
         enteredCode += input.value;
     });
 
-    const correctCode = "140224"; // CHANGE THIS
+    const correctCode = "290401"; // CHANGE THIS
 
     if (enteredCode === correctCode) {
         document.body.style.opacity = 0;
@@ -65,8 +65,8 @@ if (noBtn) {
 
 
 function unlock() {
-    const key = document.getElementById("keyInput").value.toLowerCase();
-    const correctKey = "hername"; // CHANGE THIS
+    const key = document.getElementById("keyInput").value;
+    const correctKey = "J0425D7"; // CHANGE THIS
 
     if (key === correctKey) {
         document.querySelector(".lock").textContent = "💖";
