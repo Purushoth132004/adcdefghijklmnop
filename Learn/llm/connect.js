@@ -1,6 +1,6 @@
 import { HfInference } from "@huggingface/inference";
 
-const hf = new HfInference("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");
+const hf = new HfInference();
 
 async function run(text){
   const result = await hf.chatCompletion({
